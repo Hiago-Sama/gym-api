@@ -23,6 +23,9 @@ RUN apt-get update \
     libcurl4-openssl-dev \
     libxml2-dev \
     libxslt-dev \
+    && docker-php-ext-install \
+    pdo \
+    pdo_mysql \
     && pecl install \
     mcrypt-1.0.2 \
     redis-5.1.1 \

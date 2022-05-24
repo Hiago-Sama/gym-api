@@ -2,6 +2,7 @@
 
 namespace App\Console\Commands;
 
+use Database\Seeders\DatabaseSeeder;
 use Illuminate\Console\Command;
 
 class CommandTest extends Command
@@ -37,6 +38,6 @@ class CommandTest extends Command
      */
     public function handle()
     {
-        dd('teste');
+        (new DatabaseSeeder())->run();
     }
 }

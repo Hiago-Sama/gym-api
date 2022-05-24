@@ -62,14 +62,14 @@ class AddressRequest extends FormRequest
     /**
      * Handle a failed validation attempt.
      *
-     * @param  \Illuminate\Contracts\Validation\Validator  $validator
+     * @param Validator $validator
      * @return void
      *
      * @throws TransferException
+     * @throws BuildExceptions
      */
     protected function failedValidation(Validator $validator): void
     {
-
         $exception = new BaseException(
             'AddressFormResquestError',
             'Encontramos erros nos dados informados.',

@@ -7,6 +7,7 @@ namespace App\Models;
 class Address extends BaseModel
 {
     protected $primaryKey = "uid_address";
+    protected $table = 'address';
 
     protected $fillable = [
         "zip_code",
