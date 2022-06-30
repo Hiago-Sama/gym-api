@@ -15,4 +15,5 @@ abstract class BaseModel extends Model
 
     protected $keyType = 'string';
     protected $connection = 'mysql';
+    public $incrementing = false;
 }

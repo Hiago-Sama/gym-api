@@ -30,4 +30,5 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
 Route::group(['prefix' => 'api'], function () {
     require __DIR__ . '/api/address.php';
     require __DIR__ . '/api/function.php';
+    require __DIR__ . '/api/import.php';
 });
